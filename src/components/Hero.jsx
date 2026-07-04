@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {assets} from "../assets/assets"
+import { assets } from "../assets/assets";
+import { FaDownload } from "react-icons/fa";
+
 
 const Hero = () => {
     return (
@@ -20,13 +22,27 @@ const Hero = () => {
                     <h1 className="text-4xl md:text-6xl font-bold mb-4">
                         Hi, I'm <span className="text-purple">Ankit Yadav</span>
                     </h1>
-                    <h2 className="text-2xl md:text-4xl font-semibold mb-6 typewriter">Full Stack Developer</h2>
-                    <p className="text-lg text-gray-300 mb-8"> 
+                    <div className="flex items-center gap-4 mb-6">
+                        <h2 className="text-2xl md:text-4xl font-semibold typewriter">
+                            Full Stack Developer
+                        </h2>
+
+                        <a
+                            href="/resume.pdf"
+                            download="Ankit_Kumar_Yadav_Resume.pdf"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple text-white rounded-md text-sm hover:bg-purple-700 transition duration-300 whitespace-nowrap"
+                        >
+                            <FaDownload className="text-xs" />
+                            Download Resume
+                        </a>
+                    </div>
+
+                    <p className="text-lg text-gray-300 mb-8">
                         Passionate Full Stack Developer specializing in the MERN stack. I build
                         responsive, scalable, and user-friendly web applications while constantly
                         learning new technologies and solving real-world problems.
                     </p>
-                    <div className="flex space-x-4"> 
+                    <div className="flex space-x-4">
                         <a href="#projects" className="px-6 py-3 bg-purple
                         rounded-lg font-medium hover:bg-purple-700 transition
                         duration-300">View Work</a>
@@ -36,19 +52,20 @@ const Hero = () => {
                     </div>
 
                 </div>
-             {/* Right Side content */}
-             <div className="md:w-1/2 flex  justify-center">
-             <div className="relative w-64 h-64 md:w-80 md:h-80">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple to-pink 
+                {/* Right Side content */}
+                <div className="md:w-1/2 flex  justify-center">
+                    <div className="relative w-64 h-64 md:w-80 md:h-80">
+                        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple to-pink 
                 ">
-                     <motion.img 
-                     animate={{y:[0, -20, 0]}}
-                     transition={{duration: 4, repeat: Infinity, repeatType: "loop", ease: "easeInOut"}}
-                     className="relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover z-10" src={assets.profileImg1} alt="Profile" />
-                </div>
-             </div>
+                            <motion.img
+                                animate={{ y: [0, -20, 0] }}
+                                transition={{ duration: 4, repeat: Infinity, repeatType: "loop", ease: "easeInOut" }}
+                                className="relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover z-10" src={assets.profileImg1} alt="Profile" />
+                                
+                        </div>
+                    </div>
 
-             </div>
+                </div>
             </div>
 
 
