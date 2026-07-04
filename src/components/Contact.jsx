@@ -116,7 +116,7 @@ const Contact = () => {
 </a>
 
 <a
-  href="www.linkedin.com/in/ankit-kumar-yadav-91b933295"
+  href="https://www.linkedin.com/in/ankit-kumar-yadav-91b933295/"
   target="_blank"
   rel="noopener noreferrer"
   className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
