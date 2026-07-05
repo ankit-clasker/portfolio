@@ -26,11 +26,12 @@ const Hero = () => {
                         <h2 className="text-2xl md:text-4xl font-semibold typewriter">
                             Full Stack Developer
                         </h2>
-
-                        <a
+                    </div>
+                    <div className="mb-2">
+                                                <a
                             href="/resume.pdf"
                             download="Ankit_Kumar_Yadav_Resume.pdf"
-                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple text-white rounded-md text-sm hover:bg-purple-700 transition duration-300 whitespace-nowrap"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gray text-white rounded-md text-sm hover:bg-purple-700 transition duration-300 whitespace-nowrap"
                         >
                             <FaDownload className="text-xs" />
                             Download Resume
